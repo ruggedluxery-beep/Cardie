@@ -1,0 +1,15 @@
+Options -Indexes
+
+<FilesMatch "\.(sql|md|json)$">
+    Require all denied
+</FilesMatch>
+
+# Keep generated card files and uploaded photos private from direct web requests.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^assets/uploads/ - [F,L]
+</IfModule>
+
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>

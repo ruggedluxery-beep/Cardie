@@ -1,0 +1,15 @@
+{
+  "name": "cardie/id-generator",
+  "description": "Multi-tenant employee and member ID card generator",
+  "type": "project",
+  "require": {
+    "php": ">=8.1",
+    "setasign/fpdf": "^1.8",
+    "setasign/fpdi": "^2.6",
+    "endroid/qr-code": "^5.0"
+  },
+  "config": {
+    "vendor-dir": "lib",
+    "optimize-autoloader": true
+  }
+}
